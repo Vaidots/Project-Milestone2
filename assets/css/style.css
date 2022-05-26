@@ -87,3 +87,40 @@ h1 {
     transform: transform 110ms;
 }
 
+.choice-prefix {
+    padding: 1.8rem 2.5rem;
+}
+
+.choice-text {
+    padding: 1.8rem;
+    width: 100%
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 19rem;
+    height: 3rem;
+    border: 0.3rem solid rgb(150, 182, 33);
+    margin-top: 1.8rem;
+    border-radius: 55px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(150, 182, 33);
+    width: 0%;
+}
