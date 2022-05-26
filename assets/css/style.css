@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+:root {
+    background-color: rgb(127, 23, 31);
+    font-size: 65%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 4.8 rem;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
