@@ -83,4 +83,8 @@ getNewQuestion = () => {
     localStorage.setItem('mostRecentScore', score)
     return window.location.assign('/endgame.html')
   }
+
+  questionCounter++
+  progressText.innerText = 'Question ${questionCounter} of ${MAX_QUESTIONS}'
+  progressBarFull.style.width = '${(questionCounter/MAX_QUESTIONS) * 100}%'
 }
