@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz game page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7edd419eb4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="leaderboard">
+            <ul id="leaderboard"></ul>
+        </div>        
+
+        <br/>
+        
+    </div>
+
+    <div class="container" style="height: 0px;">
+        <a href="/index.html" class="btn">Go Back</a>
+    </div>
+    
+    <script>
+        // Before going to this page:$
+        // Step 1: Check if leaderboard already exists after answering ALL questions
+        // Step 2: Push players inputed name into leaderboard array which will be stored on localStorage.getItem('leaderboard')
+        // ----------------------------------------------------------------------------------------------------------------------
+        // Step 1: Get the leaderboard - localStorage.getItem('leaderboard'), must be an Array
+        // Step 2: Loop through the leaderboard array and display it on the screen.
+
+        displayLeaderboard = () => {
+            let leaderboard = localStorage.getItem('leaderboard');
+            leaderboard = JSON.parse(leaderboard)
+            // Custom sort to check by value from an object
+            leaderboard.sort((a,b) => {
+                a = JSON.parse(a)
+                b = JSON.parse(b)
+                return b.score - a.score;
+            });
+            leaderboard.forEach(function(value,index){
+                let container = document.getElementById("leaderboard")
+                value = JSON.parse(value)
+                container.innerHTML += `
+                    <li>Name: ${value.name}, Score: ${value.score}</li>
+                `
+            })
+        }
+        displayLeaderboard()
+    </script>
+</body>
+</html>

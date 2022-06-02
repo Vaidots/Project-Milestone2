@@ -68,6 +68,24 @@ h1 {
     transform: none;
 }
 
+form {
+    margin-bottom: 1rem;
+    width: 30rem;
+    padding: 1.9rem 0;
+    font-size: 2rem;
+        text-align: center;
+}
+ 
+form > input {
+    margin-bottom: 1rem;
+    width: 30rem;
+    padding: 1.9rem 0;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+    
+
 /* game question, answer style */
 
 .choice-container {
@@ -123,4 +141,38 @@ h1 {
     height: 100%;
     background: rgb(150, 182, 33);
     width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 30rem;
+    }
+}
+
+@media (hover: hover) {
+    .high-score:hover {
+        transform: scale(1.025);
+    }
+}
+
+@media (hover: hover) {
+    .choice-container:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+        transform: scale(1.02);
+    }
+}
+
+
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+    #question {
+        font-size: 2.5rem
+    }
+    
+    .choice-text {
+        font-size: 2rem
+    }
 }

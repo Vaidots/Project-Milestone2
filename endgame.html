@@ -13,12 +13,49 @@
             <h1 id="finalScore">0</h1>
             <form class="endgame-form-container">
                 <h2 id="endgame-text">CONGRATULATIONS! enter your username to save your score!</h2>
-                <input type="text" name="name" id="username">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <input type="text" name="name" id="username" placeholder="username">
+                 
             </form>
+            <button class="btn" id="saveScoreBtn" type="submit" onclick="SaveHighScore()">Save</button>
             <a href="/game.html" class="btn">Play Again</a>
             <a href="/index.html" class="btn">Go Back</a>
         </div>
     </div>
+
+<script>
+    GetResults = () => {
+        let score = localStorage.getItem('mostRecentScore')
+        let finalScore = document.getElementById("finalScore")
+        finalScore.innerHTML = score
+    }
+
+    SaveHighScore = () => {
+        let leaderboard = localStorage.getItem('leaderboard')
+        if(leaderboard == null){
+            let data = {
+                name: document.getElementById("username").value,
+                score: localStorage.getItem('mostRecentScore')
+            }
+
+            let list = []
+            list.push(JSON.stringify(data));
+            console.log(list)
+            localStorage.setItem("leaderboard", JSON.stringify(list))
+        } else {
+            let data = {
+                name: document.getElementById("username").value,
+                score: localStorage.getItem('mostRecentScore')
+            }
+
+            //leaderboard = JSON.parse(leaderboard)
+            console.log(leaderboard)
+            leaderboard = JSON.parse(leaderboard)
+            leaderboard.push(JSON.stringify(data))
+            localStorage.setItem("leaderboard", JSON.stringify(leaderboard))
+        }
+    }
+
+    GetResults()
+</script>
 </body>
 </html>
