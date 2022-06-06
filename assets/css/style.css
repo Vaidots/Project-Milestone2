@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 
 :root {
-    background-color: rgb(127, 23, 31);
+    background-color: rgb(20, 17, 18);
     font-size: 65%;
 }
 
@@ -10,17 +10,31 @@
     margin: 0;
     padding: 0;
     font-family: 'ZCOOL XiaoWei', serif;
+    color: white;
 }
 
 h1 {
     font-size: 5rem;
     color: white;
-    margin-bottom: 4.8 rem;
+    margin-bottom: 6rem;
+    
 }
 
 
 .container {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+
+.container-leaderboard {
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -43,20 +57,46 @@ h1 {
 /* nepamirsk surasyt likusiu klasiu flex */
 
 .btn {
-    font-size: 2.5rem;
-    padding: 2.2rem 0;
-    width: 31rem;
-    text-align: center;
-    margin-bottom: 1.1rem;
-    text-decoration: none;
-    color: black;
-    background: linear-gradient(85deg, rgb(182, 119, 33) 0%, rgb(127, 84, 23) 100%);
-    border-radius: 5px;
+        font-size: 2.5rem;
+        padding: 2.2rem 0;
+        width: 31rem;
+        text-align: center;
+        margin-bottom: 1.1rem;
+        text-decoration: none;
+        color: whitesmoke;
+        background: linear-gradient(310deg, rgb(104 21 8 / 0%) 0%, rgb(235 188 192) 100%);
+        border-radius: 5px;
+        
+
+
 }
+
+.btn-index {
+    font-size: 2.5rem;
+        padding: 2.2rem 0;
+        width: 31rem;
+        text-align: center;
+        margin-bottom: 1.1rem;
+        text-decoration: none;
+        color: whitesmoke;
+        background: linear-gradient(310deg, rgb(104 21 8 / 0%) 0%, rgb(235 188 192) 100%);
+        border-radius: 5px;
+        margin-left: 5rem;
+
+}
+
+.btn-index:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.3rem 0 rgba(219, 214, 203, 0.7);
+    transition: transform 160ms;
+    transform: scale(1.04);
+    
+}
+
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.3rem 0 rgb(224, 142, 26, 0.7);
+    box-shadow: 0 0.5rem 1.3rem 0 rgba(95, 74, 32, 0.7);
     transition: transform 160ms;
     transform: scale(1.04);
     
@@ -84,6 +124,10 @@ form > input {
     text-align: center;
     margin-top: 3rem;
 }
+
+#leaderboard {
+    font-size: 2.5rem;
+}
     
 
 /* game question, answer style */
@@ -95,12 +139,12 @@ form > input {
     border-radius: 5px;
     font-size: 2.8rem;
     min-width: 78rem;
-    background: rgb(163, 103, 19);
+    background: rgb(124 109 87);
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.3rem 0 rgb(224, 142, 26, 0.7);
+    box-shadow: 0 0.5rem 1.3rem 0 rgba(126, 112, 92, 0.7);
     transform: scale(1.04);
     transform: transform 110ms;
 }
@@ -131,7 +175,7 @@ form > input {
 #progressBar {
     width: 19rem;
     height: 3rem;
-    border: 0.3rem solid rgb(150, 182, 33);
+    border: 0.3rem solid rgb(255,255,0);
     margin-top: 1.8rem;
     border-radius: 55px;
     overflow: hidden;
@@ -139,7 +183,7 @@ form > input {
 
 #progressBarFull {
     height: 100%;
-    background: rgb(150, 182, 33);
+    background: rgb(255,255,0);
     width: 0%;
 }
 
@@ -147,7 +191,14 @@ form > input {
     .choice-container {
         min-width: 30rem;
     }
+
+    :root {
+        background-color: rgb(20, 17, 18);
+        font-size: 60%;
+    }
+    
 }
+
 
 @media (hover: hover) {
     .high-score:hover {
@@ -158,7 +209,7 @@ form > input {
 @media (hover: hover) {
     .choice-container:hover {
         cursor: pointer;
-        box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(126, 112, 92, 0.7);
         transform: scale(1.02);
     }
 }
@@ -168,11 +219,27 @@ form > input {
 /* Mobile Screen */
 
 @media screen and (max-width: 600px) {
+    
+    :root {
+        background-color: rgb(20, 17, 18);
+        font-size: 56%;
+    }
+    
     #question {
         font-size: 2.5rem
     }
     
     .choice-text {
         font-size: 2rem
+    }
+}
+
+@media screen and (max-width: 280px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'ZCOOL XiaoWei', serif;
+        font-size: large;
     }
 }

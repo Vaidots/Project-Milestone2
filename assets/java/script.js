@@ -262,6 +262,11 @@ incrementScore = num => {
 }
 
 
+
+
+
+
+
 // Initiate the game
 startGame()
 
