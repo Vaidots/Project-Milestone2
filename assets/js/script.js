@@ -187,7 +187,7 @@ NewQuestion = () => {
   // Check if we can play the game.
   if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem('mostRecentScore', score)
-    return window.location.assign('/endgame.html')
+    return window.location.assign('endgame.html')
   }
 
   // Show which question it is and fill in the progress bar.
