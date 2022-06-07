@@ -96,7 +96,7 @@ h1 {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.3rem 0 rgba(95, 74, 32, 0.7);
+    box-shadow: 0 0.5rem 1.3rem 0 rgba(219, 214, 203, 0.7);
     transition: transform 160ms;
     transform: scale(1.04);
     
@@ -123,6 +123,7 @@ form > input {
     font-size: 2rem;
     text-align: center;
     margin-top: 3rem;
+    color: black;
 }
 
 #leaderboard {

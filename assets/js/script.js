@@ -1,11 +1,11 @@
 const question = document.getElementById('question');
-const choices = Array.from(document.querySelectorAll('choice-text'));
+//const choices = Array.from(document.querySelectorAll('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull')
 
 let currentQuestion = {}
-let acceptingAnswers = true
+//let acceptingAnswers = true
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
@@ -20,19 +20,19 @@ let questions = [
       answers: [
         {
           answer: "James Naismith",
-          isCorrect: 1
+          true: 1
         },
         {
           answer: "Michael Jordan",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "James Sherman",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "John Edwin",
-          isCorrect: 0
+          true: 0
         }
       ],
     }
@@ -44,19 +44,19 @@ let questions = [
       answers: [
         {
           answer: "12",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "5",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "10",
-          isCorrect: 1
+          true: 1
         },
         {
           answer: "8",
-          isCorrect: 0
+          true: 0
         }
       ]
     }
@@ -68,19 +68,19 @@ let questions = [
       answers: [
         {
           answer: "Latvia",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Estonia",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Lithuania",
-          isCorrect: 1
+          true: 1
         },
         {
           answer: "Poland",
-          isCorrect: 0
+          true: 0
         }
       ]
     }
@@ -92,19 +92,19 @@ let questions = [
       answers: [
         {
           answer: "Air Jordan",
-          isCorrect: 1
+          true: 1
         },
         {
           answer: "Air ball",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Flying Jordan",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Unstopable Jordan",
-          isCorrect: 0
+          true: 0
         }
       ]
     }
@@ -116,19 +116,19 @@ let questions = [
       answers: [
         {
           answer: "LeBron James",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Scotty Pipen",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "James Sherman",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "Dennis Rodman",
-          isCorrect: 1
+          true: 1
         }
       ]
     }
@@ -140,19 +140,19 @@ let questions = [
       answers: [
         {
           answer: "1992",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "1988",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "1996",
-          isCorrect: 0
+          true: 0
         },
         {
           answer: "2000",
-          isCorrect: 1
+          true: 1
         }
       ]
     }
@@ -232,7 +232,7 @@ checkAnswer = (questionID, answer) => {
       value.question.answers.forEach(function(vAnswer,iAnswer){
         if(answer == vAnswer.answer){
           // If correct inform the user
-          if(vAnswer.isCorrect == 1) {
+          if(vAnswer.true == 1) {
             console.log("Correct Answer")
             let infoMessage = document.getElementById("infoMessage")
             infoMessage.innerHTML = "<i style='color: green; font-size: 5em;' class='fas fa-check fa-2xl'></i> <h1>Correct!</h1>"

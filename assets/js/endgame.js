@@ -1,10 +1,14 @@
-GetResults = () => {
+
+/*jshint esversion: 6 */
+/*jshint -W033 */
+
+const GetResults = () => {
     let score = localStorage.getItem('mostRecentScore')
     let finalScore = document.getElementById("finalScore")
     finalScore.innerHTML = score
   }
   
-  SaveHighScore = () => {
+  const SaveHighScore = () => {
     let leaderboard = localStorage.getItem('leaderboard')
     if(leaderboard == null){
         let data = {
