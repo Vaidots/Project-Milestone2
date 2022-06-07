@@ -33,7 +33,7 @@ h1 {
 }
 
 
-.container-leaderboard {
+.container-leaderboard, .container-leaderboard-button {
     height: 100%;
     width: 100%;
     display: flex;
