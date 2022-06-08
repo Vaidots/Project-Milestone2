@@ -147,7 +147,7 @@ form > input {
     cursor: pointer;
     box-shadow: 0 0.5rem 1.3rem 0 rgba(126, 112, 92, 0.7);
     transform: scale(1.04);
-    transform: transform 110ms;
+ 
 }
 
 .choice-prefix {
