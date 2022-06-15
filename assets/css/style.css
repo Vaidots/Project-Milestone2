@@ -140,77 +140,34 @@ body {
 }
 /*  classes and schedule */
 
-.class-content-wrapper1,.class-content-wrapper2, .class-content-wrapper3  {
+.class-content-wrapper1  {
     display:flex;
     width: 100%; 
     padding: 20px 0;
     
-}
-
- .class-try {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 2%;
-    font-size: 2rem;
-    padding-bottom: 2%;
-}
-
-.text-right {
-    margin-left: 60px;
-    padding-right: 30px;
-    float: right;
-    width: 50%;
-    height: fit-content;
-}
-
-.picture-left {
-    height: 358px;
-    width: 50%;
     
 }
 
-.picture-right {
-
-    height: 358px;
-    width: 50%;
+.classes-text {
+    text-align: center;
+    margin-left: 25px;
 }
 
-.class-text-right {
-    text-align: justify;
-    padding: 50px;
-    line-height: 25px;
-    margin-left: 0%;
-    display: inline-block;
- 
+.classes-text > h3 {
+    padding: 25px;
 }
 
-.text-left {
-    float:left;
-    width: 50%;
+.classes-text > p {
+    padding: 10px;
 }
 
-.class-text-left {
-    text-align: justify;
-    padding: 50px;
-    line-height: 25px;
-    margin-left: 5%;
-
+.classes-pictures > img {
+    height: 427px;
+    width: 640px;
 }
 
-.picture-right > img  {
-    height: 468px;
-    width: 86%;
-    border-radius: 15%;
-    padding: 50px;
-    padding-left: 30px;
-}
 
-.picture-left > img {
-    border-radius: 15%;
-    height: 468px;
-    width: 80%;
-    padding-left: 30px;
-}
+
 
 hr {
     border-top: 1px solid black;
@@ -223,22 +180,6 @@ hr {
     margin-right: auto;
     margin-left: auto;
   
-}
-
-.class-text-right > h3 {
-    text-align: center;
-    margin-bottom: 3%
-}
-
-.class-text-left > h3 {
-    text-align: center;
-    margin-bottom: 3%;
-    margin-top: 5%;
-
-}
-
-.class-text-right > p   {
-    margin-bottom: 5%
 }
 
 /* Our team that will make your day amazing! */
@@ -478,29 +419,7 @@ input, textarea {
         margin-left: 0;
         padding-right: 0;
     }
-    .picture-left {
-        height: 500px;
-        width: 600px;  
-    }
-
-    .picture-right {
-        height: 500px;
-        width: 600px;
-    }
-    
-    .picture-left > img {
-        border-radius: 15%;
-        height: 468px;
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .picture-right > img {
-        border-radius: 15%;
-        height: 468px;
-        width: 100%;
-        padding-left: 0;
-    }
+   
     .class-text-left {
        margin-left: 0;
     }
@@ -572,12 +491,6 @@ input, textarea {
         margin-left: 5px;
     }
 
-    .class-text-right {
-        font-size: .9rem;
-    }
-    .class-text-left {
-        font-size: .9rem;
-    }
 
     .back-button {
         width: 37%;
@@ -622,41 +535,12 @@ input, textarea {
         margin-left: 5px;
         font-size: 1.5rem;
     }
-    .picture-left {
-        height: 400px;
-        width: 387px;
-    }
-    .picture-left > img {
-        border-radius: 15%;
-        height: 321px;
-        width: 92%;
-        padding-left: 0;
-    }
-    .text-right {
-        width: 337px;
-        height: 480px;
-        margin-left: 0;
-        padding-right: 0;
-    }
-    .text-left {
-        width: 337px;
-        height: 450px;
-        margin-left: 0;
-        padding-right: 0;
-    }
+   
+    
     .class-text-left {
         font-size: .9rem;
     }
-    .picture-right {
-        height: 500px;
-        width: 335px;
-    }
-    .picture-right > img {
-        border-radius: 15%;
-        height: 321px;
-        width: 106%;
-        padding-left: 0;
-    }
+   
     #our-team {
         margin-left: 26%;
     }
