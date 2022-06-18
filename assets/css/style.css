@@ -23,7 +23,7 @@ header {
     font-size: 260%;
     margin-left: 50px;
     line-height: 50px; */
-}
+/* } */
 
 #menu li {
     float: right;
@@ -168,7 +168,6 @@ h2.class-try {
     padding: 10px;
 }
 
-.classes-pictures {}
 
 .classes-pictures>img {
     width: 100%;
@@ -202,9 +201,7 @@ hr {
     padding-bottom: 5%;
 }
 
-.team-shapping {
-    /* margin-left: 33%; */
-}
+
 
 .team-shapping>img {
     border-radius: 50%;
@@ -537,7 +534,7 @@ textarea {
 
     }
 
-    
+
     .classes-pictures>img {
         max-width: 100%;
         margin-left: 20%;
@@ -546,6 +543,8 @@ textarea {
 
     .class-content-wrapper1 {
         max-width: 80%;
+        margin-bottom: 0px;
+        margin-left: 5%;
     }
 
     .classes-pictures {
@@ -560,10 +559,25 @@ textarea {
     }
 
     .team-shapping>img {
-        margin-left: -80px !important;
         width: 225px;
         height: 225px;
+        padding: 15px;
+
     }
+
+    .team-shapping {
+        margin-left: 10%;
+    }
+
+    .teachers-text {
+        margin-right: 10%;
+    }
+
+    .schedule-time-day {
+        margin-left: 15px;
+    }
+
+}
 
     @media screen and (max-width: 300px) {
         html {
@@ -571,7 +585,13 @@ textarea {
         }
 
         .team-shapping>img {
-            width: 220px;
+            width: 200px;
             height: 220px;
         }
+
+        .teachers-text {
+            margin-left: 3%;
+        }
+
+
     }
