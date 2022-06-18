@@ -506,7 +506,7 @@ textarea {
 @media screen and (max-width: 540px) {
     .team-shapping>img {
         text-align: center;
-        margin-left: -50 !important;
+        margin-left: -50px !important;
     }
 
     .signup-form {
