@@ -240,9 +240,7 @@ hr {
 }
 
 /* Schedule */
-#schedule {
-    background-color: aqua;
-}
+
 
 .our-schedule-center {
     text-align: center;
@@ -484,10 +482,7 @@ textarea {
         display: contents;
     }
 
-    #schedule {
-        background-color: aqua;
-    }
-
+    
     .schedule-container {
         display: grid;
         justify-content: space-evenly;
