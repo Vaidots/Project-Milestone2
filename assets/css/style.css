@@ -528,30 +528,50 @@ textarea {
 
 @media screen and (max-width: 500px) {
 
-    .classes-text {
-        width: 450px;
+    html {
+        font-size: 0.8rem;
     }
 
+    .header {
+        min-height: 30vh;
 
-    @media screen and (max-width: 444px) {}
+    }
 
-    @media screen and (max-width: 360px) {
-        .classes-text {
-            width: 80%;
-        }
+    
+    .classes-pictures>img {
+        max-width: 100%;
+        margin-left: 20%;
 
-        .classes-pictures>img {
-            width: 80%;
-        }
+    }
 
-        .classes-pictures {
-            width: 361px;
-            height: 300px;
+    .class-content-wrapper1 {
+        max-width: 80%;
+    }
+
+    .classes-pictures {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .classes-text {
+        width: 80%;
+        margin: 2%;
+        margin-left: 20%;
+    }
+
+    .team-shapping>img {
+        margin-left: -80px !important;
+        width: 225px;
+        height: 225px;
+    }
+
+    @media screen and (max-width: 300px) {
+        html {
+            font-size: 0.6rem
         }
 
         .team-shapping>img {
-            border-radius: 50%;
-            width: 240px;
-            height: 240px;
+            width: 220px;
+            height: 220px;
         }
     }
